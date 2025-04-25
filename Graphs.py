@@ -4,7 +4,7 @@ if __name__ == "__main__":
     run = True
     while run == True:
         print('Please select which graph you would like to create')
-        print('1: Complete Bipartite Graph (k-Labeled)')
+        print('1: Complete Bipartite Graph')
         print('2: Mongolian Tent Graph')
         print('3: Circulant Graph')
         print('Q: Quit')
