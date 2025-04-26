@@ -1,0 +1,1 @@
+This folder (other solutions) contains other fully developed solutions that were considered during the course of this project. It also contains the orginal file for the Bipartite.py, named biprite.py. The algorithm used in biprite.py was utilized in this project, however, it has been edited to work with the Graph.py file.
