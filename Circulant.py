@@ -9,14 +9,18 @@ class CirculantGraph:
 
 
     def generate_sequence(self, n):
-        upper = min(math.ceil(n / 2), 4)
-        # seed with [1, 2, ..., upper]
-        l = list(range(1, upper + 1))
-        #   l[k] = l[k-1] + l[k-3]
-        while len(l) < n:
-            j = l[-1] + l[-3]
-            l.append(j)
-        return l
+        if (n < 5):
+            raise ValueError('Value n must be greater than or equal to 5')
+        else:
+            #upper = min(math.ceil(n / 2), 4)
+            upper = 4
+            # seed with [1, 2, ..., upper]
+            l = list(range(1, upper + 1))
+            #   l[k] = l[k-1] + l[k-3]
+            while len(l) < n:
+                j = l[-1] + l[-3]
+                l.append(j)
+            return l
 
 
     def circulant_adjacency(self, n, jumps):

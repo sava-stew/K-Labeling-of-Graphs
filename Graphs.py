@@ -11,7 +11,7 @@ if __name__ == "__main__":
         type = input()
 
         if type == '1':
-            m = int(input('Please enter the value of m, which must be greater than or equal to n: '))
+            m = int(input('Please enter the value of m: '))
             n = int(input('Please enter the value of n: '))
             graph = Bipartite.BipartiteGraph(m, n)
             print("\n")

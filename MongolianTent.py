@@ -9,8 +9,8 @@ class MongolianTentGraph:
 
 
     def add_vertices(self, n):
-        if (n < 2) or (n > 10):
-            raise ValueError('Values m and n must be greater than or equal to 2 and less than or equal to 10')
+        if (n < 2):
+            raise ValueError('Value n must be greater than or equal to 2')
         else:
             for i in range(1, n+1):
                 self.path1[i] = 2 * i
